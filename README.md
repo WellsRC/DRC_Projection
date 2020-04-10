@@ -1,6 +1,10 @@
 # The projected burden of COVID-19 in the Democratic Republic of Congo
 Chad R. Wells, Jason K Stearns, Pascal Lutumba, Alison P Galvani
 
+Copyright 2020, Chad Wells et al. All rights reserved. Released under the GNU AGPL 3.
+
+The MATLAB code provided here will run analysis for the modelling portion of the manuscript.
+
 ## System of ordinary differential equations
 SODENH - Contains the system of ordinary differential equations
 ## Demographics
