@@ -17,5 +17,3 @@ ParameterOutput-Returns the paramters need to run the simulations
 MIDAS_R0 - Calculates the average R0 and the 95% CI and outputs the numerical results for these values of R0
 ## Figure 1
 RunSim- The script runs the simulations  for the results for Figure 1 and generates the figure
-## Figure A1
-ContourRunSim- The script runs the simulations  for the results for Figure A1 and generates the figure
