@@ -1,4 +1,4 @@
-# The projected burden of COVID-19 in the Democratic Republic of Congo
+# COVID-19 on the African Continent
 Chad R. Wells, Jason K Stearns, Pascal Lutumba, Alison P Galvani
 
 Copyright 2020, Chad Wells et al. All rights reserved. Released under the GGNU GENERAL PUBLIC LICENSE v3.
