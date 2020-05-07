@@ -8,7 +8,7 @@ The MATLAB code provided here will run analysis for the modelling portion of the
 ## System of ordinary differential equations
 SODENH - Contains the system of ordinary differential equations
 
-Note: A small typo in the code slightly affected epidemic trajectory. 
+Note: A small typo in the code affected epidemic trajectory. 
 ## Demographics
 DemoDRC - Compresses the contact matrix, the population, and case fatality ratios for the specified age groups
 ## Calibration of transmission rate
