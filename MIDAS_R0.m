@@ -145,7 +145,7 @@ R0v(2:3) = round(mean(R0) + ts*SEM,2);                      % Confidence Interva
 
 R0v
 Amin=[0 20 50 65];
-TS=365;
+TS=10^5;
 A=length(Amin);
 Cases=zeros(1,3);
 SCases=zeros(4,3);
@@ -170,7 +170,7 @@ Q=4*A+[1:A]; % Incubation andvaccinated after infection
 CI=5*A+[1:A]; % cumulative infections
 CD=6*A+[1:A]; % cumulative removal of infections
 CS=7*A+[1:A]; % cumulative removal of infections
-
+ semilogy(TM1,sum(YM1(:,(E+I)),2)); hold on;
 Cases(nn)=sum(YM1(end,CI));
 SCases(:,nn)=(YM1(end,CI));
 Deaths(nn)=sum(YM1(end,CD).*MortR);
@@ -201,7 +201,24 @@ fprintf('Deaths \n')
 round(Deaths)
 
 fprintf('Cases in 0-19 \n')
-round(100.*SCases(1,:)./sum(SCases,1),2)
+round(100.*round(SCases(1,:))./round(sum(SCases,1)),1)
+
+fprintf('Cases in 0-19 \n')
+round(SCases(1,:))
 
 fprintf('Deaths in 50+ \n')
-round(100.*(SDeath(3,:)+SDeath(4,:))./sum(SDeath,1),2)
+round(100.*round(SDeath(3,:)+SDeath(4,:))./round(sum(SDeath,1)),1)
+fprintf('Deaths in 50+ \n')
+round(SDeath(3,:)+SDeath(4,:))
+
+fprintf('Deaths in 50+ \n')
+round(100.*(SDeath(3,:)+SDeath(4,:))./(sum(P(3:4))),1)
+
+
+fprintf('Deaths in 65+ \n')
+round(100.*round(SDeath(4,:))./round(sum(SDeath,1)),1)
+fprintf('Deaths in 65+ \n')
+round(SDeath(4,:))
+
+fprintf('Deaths in 65+ \n')
+round(100.*(SDeath(4,:))./(sum(P(4))),1)

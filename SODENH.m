@@ -39,9 +39,9 @@ CI=5*A+[1:A]; % cumulative infections
 CD=6*A+[1:A]; % cumulative removal of infections
 
 %% Susceptible and vaccinated population
-dxdt(S)= -beta.*(M*(x(I)+x(C))./P).*x(S)-beta.*(M2*(x(Q))./P).*x(S);
+dxdt(S)= -beta.*(M*((x(I)./P+x(C)./P))).*x(S)-beta.*(M2*(x(Q)./P)).*x(S);
 %% Incubation period population
-dxdt(E)= beta.*(M*(x(I)+x(C))./P).*x(S)+beta.*(M2*(x(Q))./P).*x(S)-sigma.*x(E);
+dxdt(E)= beta.*(M*(x(I)./P+x(C)./P)).*x(S)+beta.*(M2*(x(Q)./P)).*x(S)-sigma.*x(E);
 %% Milder infection
 dxdt(I)=(1-theta).*sigma.*x(E)-delta.*x(I);
 %% More severe infection

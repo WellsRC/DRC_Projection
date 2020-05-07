@@ -50,7 +50,8 @@ legend({'Ages 0-19','Ages 20-49','Ages 50-64','Ages 65+'},'location','NorthWest'
 legend boxoff;
 yh=ylabel('Total number of cases (\times 1,000) ','Fontsize',28);
 text(yh.Extent(1),max(ylim),'A','Fontsize',38,'Fontweight','bold');
-print(gcf,['Figure1A.png'],'-dpng','-r300');
+print(gcf,['Figure1A.png'],'-dpng','-r600');
+saveas(gcf,'Test1','epsc')
 figure('units','normalized','outerposition',[0 0 1 1]);
 bb=area(R0v,Deaths'./1000,'LineStyle','none');
 for ii=1:4
@@ -63,8 +64,9 @@ ax = gca;
 ax.YRuler.Exponent = 0;
 xlabel('Basic reproductive number ({\it R}_0)','Fontsize',28);
 yh=ylabel('Total number of deaths (\times 1,000)','Fontsize',28);
-ylim([0 400]);
+ylim([0 150]);
 legend({'Ages 0-19','Ages 20-49','Ages 50-64','Ages 65+'},'location','NorthWest','Fontsize',26);
 legend boxoff;
 text(yh.Extent(1),max(ylim),'B','Fontsize',38,'Fontweight','bold');
-print(gcf,['Figure1B.png'],'-dpng','-r300');
+print(gcf,['Figure1B.png'],'-dpng','-r600');
+saveas(gcf,'Test2','epsc')
