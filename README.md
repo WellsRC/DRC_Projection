@@ -7,8 +7,6 @@ The MATLAB code provided here will run analysis for the modelling portion of the
 
 ## System of ordinary differential equations
 SODENH - Contains the system of ordinary differential equations
-
-Note: Code was updated after publication and results in slightly varying trajectories
 ## Demographics
 DemoDRC - Compresses the contact matrix, the population, and case fatality ratios for the specified age groups
 ## Calibration of transmission rate
